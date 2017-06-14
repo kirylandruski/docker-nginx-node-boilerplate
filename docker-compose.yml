@@ -1,0 +1,15 @@
+version: '3.2'
+services:
+  nginx-proxy:
+      build:
+        context: ./nginx
+      links:
+          - node-server:node-server
+      ports:
+          - "443:443"
+          - "80:80"
+  node-server:
+      build:
+        context: ./server
+      ports:
+          - "2001:80"

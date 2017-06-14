@@ -1,0 +1,8 @@
+**/node_modules/*
+.idea/*
+.vagrant/*
+**/dist/*
+!**/dist/.gitkeep
+**/.tmp/*
+**/tmp/*
+coverage/*
